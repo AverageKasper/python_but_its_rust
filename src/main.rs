@@ -2,15 +2,18 @@ mod task1;
 mod task2;
 use std::io;
 use task1::hello_world;
-use task2::{area_of_circle, area_of_rectangle, hello_user, number_solution};
+use task2::{area_of_circle, area_of_rectangle, combinations, hello_user, number_solution, talent_calculation};
 fn main() {
-    println!("Python but its Rust Tasks");
+    println!("Python but its Rust");
     println!("Type the number of the task you want to execute");
     println!("Task 1 - Hello World");
     println!("Task 2.1 - Hello User");
     println!("Task 2.2 - Area of a circle");
     println!("Task 2.3 - Area of a rectange");
     println!("Task 2.4 - 3 Number sum, product and average");
+    println!("Task 2.5 - Talents, pounds and lots");
+    println!("Task 2.6 - Combination codes");
+    println!("Task  - Placeholder");
     println!("Task  - Placeholder");
     println!("Choose witch task to execute");
 
@@ -34,5 +37,9 @@ fn main() {
         area_of_rectangle();
     } else if choice == 2.4 {
         number_solution();
+    } else if choice == 2.5 {
+        talent_calculation();
+    } else if choice == 2.6 {
+        combinations();
     }
 }
